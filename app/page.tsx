@@ -31,9 +31,9 @@ export default function Home() {
         <Highlights />
       </FadeIn>
       
-      <FadeIn direction="up" delay={0.6}>
+      {/* <FadeIn direction="up" delay={0.6}>
         <RecruitmentForm />
-      </FadeIn>
+      </FadeIn> */}
       
       <Footer />
       <BackToTop />
