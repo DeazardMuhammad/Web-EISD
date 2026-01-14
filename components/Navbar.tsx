@@ -26,7 +26,7 @@ export default function Navbar() {
               className="object-contain"
             />
           </motion.div>
-          <span className="font-bold text-primary hidden sm:inline group-hover:text-accent-green transition-colors duration-300">EISD</span>
+          <span className="font-bold text-primary hidden sm:inline group-hover:text-accent-green transition-colors duration-300">EISD Laboratory</span>
         </motion.div>
 
         {/* Menu Items */}
