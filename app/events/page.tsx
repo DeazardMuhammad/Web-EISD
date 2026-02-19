@@ -72,7 +72,7 @@ export default function Events() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-12 px-4 relative glow-blue-top-right overflow-hidden">
+      <section className="pt-32 pb-12 px-4 relative">
         <div className="max-w-6xl mx-auto relative z-10 text-center">
           <FadeIn direction="up" delay={0.2}>
             <motion.div
@@ -120,7 +120,7 @@ export default function Events() {
       </section>
 
       {/* Events Grid */}
-      <section className="py-12 px-4 relative glow-blue-left overflow-hidden">
+      <section className="py-12 px-4 relative">
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredEvents.map((event, index) => (

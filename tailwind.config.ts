@@ -10,13 +10,13 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#6D5EF6',
-          dark: '#5B4DD4',
-          light: '#8B7EFF',
+          DEFAULT: '#494CA0',
+          dark: '#3A3D80',
+          light: '#6366B8',
         },
         accent: {
           pink: '#FDE2E4',
-          green: '#10B981',
+          green: '#00D97A',
         },
       },
       boxShadow: {
@@ -31,4 +31,3 @@ const config: Config = {
   plugins: [],
 }
 export default config
-

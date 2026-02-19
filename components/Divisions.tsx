@@ -83,7 +83,7 @@ export default function Divisions() {
   const activeGradient = gradients[activeIndex % gradients.length]
 
   return (
-    <section className="py-16 px-4 relative glow-pink-left overflow-hidden">
+    <section className="py-16 px-4 relative">
       <div className="max-w-7xl mx-auto relative z-10">
         <SectionHeading 
           eyebrow="Division"
@@ -112,7 +112,7 @@ export default function Divisions() {
           </button>
 
           {/* ===== Desktop: Horizontal Stacked Cards (unchanged) ===== */}
-          <div className="hidden md:flex relative items-center justify-center overflow-hidden px-8" style={{ height: '420px' }}>
+          <div className="hidden md:flex relative items-center justify-center px-8" style={{ height: '420px' }}>
             {divisions.map((card, index) => {
               const position = getDesktopPosition(index)
               const isCenter = index === activeIndex
@@ -163,7 +163,7 @@ export default function Divisions() {
           </div>
 
           {/* ===== Mobile: Single full-width card with swipe + slide ===== */}
-          <div className="md:hidden relative overflow-hidden mx-10">
+          <div className="md:hidden relative mx-10">
             <AnimatePresence initial={false} custom={direction} mode="popLayout">
               <motion.div
                 key={activeIndex}

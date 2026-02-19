@@ -41,7 +41,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(109, 94, 246, 0.08), transparent);
+    background: linear-gradient(90deg, transparent, rgba(73, 76, 160, 0.08), transparent);
     transition: left 0.6s ease;
   }
   
@@ -53,7 +53,7 @@
     transform: translateY(-2px);
     box-shadow: 
       0 20px 50px rgba(0, 0, 0, 0.08),
-      0 10px 30px rgba(109, 94, 246, 0.15);
+      0 10px 30px rgba(73, 76, 160, 0.15);
   }
   
   /* Navbar Glass Effect */
@@ -69,8 +69,8 @@
   
   .card-glow-smooth:hover {
     box-shadow: 
-      0 20px 60px rgba(109, 94, 246, 0.12),
-      0 0 0 1px rgba(109, 94, 246, 0.05);
+      0 20px 60px rgba(73, 76, 160, 0.12),
+      0 0 0 1px rgba(73, 76, 160, 0.05);
   }
 
   /* Enhanced Shimmer for badges */
@@ -128,7 +128,7 @@
 
   /* Background Gradient Animation */
   .bg-gradient-animate {
-    background: linear-gradient(270deg, #6D5EF6, #10B981, #6D5EF6);
+    background: linear-gradient(270deg, #494CA0, #00D97A, #494CA0, #00D97A);
     background-size: 600% 600%;
     animation: gradientFlow 8s ease infinite;
   }
@@ -159,10 +159,10 @@
   /* Pulse Glow */
   @keyframes pulseGlow {
     0%, 100% { 
-      box-shadow: 0 0 20px rgba(109, 94, 246, 0.3);
+      box-shadow: 0 0 20px rgba(73, 76, 160, 0.3);
     }
     50% { 
-      box-shadow: 0 0 30px rgba(109, 94, 246, 0.6);
+      box-shadow: 0 0 30px rgba(73, 76, 160, 0.6);
     }
   }
   
@@ -190,102 +190,9 @@
     @apply h-px bg-gray-200;
   }
 
-  /* Glow Backgrounds - Distributed per section (alternating left/right) */
-  /* Positioning: stable on zoom, colors: more visible */
-  
-  /* 1. Blue - Top Right (Hero) */
-  .glow-blue-top-right {
-    position: relative;
-    overflow: hidden;
-  }
-  .glow-blue-top-right::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: min(700px, 80vw);
-    height: min(500px, 80vh);
-    background: radial-gradient(ellipse, rgba(147, 197, 253, 0.6) 0%, rgba(147, 197, 253, 0.25) 35%, rgba(147, 197, 253, 0.08) 55%, transparent 75%);
-    pointer-events: none;
-    z-index: 0;
-    transform: translate(15%, -50%);
-  }
-  
-  /* 2. Blue - Left Middle (Focus Area) */
-  .glow-blue-left {
-    position: relative;
-    overflow: hidden;
-  }
-  .glow-blue-left::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: min(650px, 75vw);
-    height: min(450px, 75vh);
-    background: radial-gradient(ellipse, rgba(147, 197, 253, 0.55) 0%, rgba(147, 197, 253, 0.22) 35%, rgba(147, 197, 253, 0.06) 55%, transparent 75%);
-    pointer-events: none;
-    z-index: 0;
-    transform: translate(-15%, -50%);
-  }
-  
-  /* 3. Pink - Left Bottom (Division) */
-  .glow-pink-left {
-    position: relative;
-    overflow: hidden;
-  }
-  .glow-pink-left::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: min(700px, 80vw);
-    height: min(500px, 80vh);
-    background: radial-gradient(ellipse, rgba(251, 207, 232, 0.6) 0%, rgba(251, 207, 232, 0.25) 35%, rgba(251, 207, 232, 0.08) 55%, transparent 75%);
-    pointer-events: none;
-    z-index: 0;
-    transform: translate(-15%, -50%);
-  }
-  
-  /* 4. Blue - Right Middle (Highlights) */
-  .glow-blue-right {
-    position: relative;
-    overflow: hidden;
-  }
-  .glow-blue-right::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: min(650px, 75vw);
-    height: min(450px, 75vh);
-    background: radial-gradient(ellipse, rgba(147, 197, 253, 0.5) 0%, rgba(147, 197, 253, 0.2) 35%, rgba(147, 197, 253, 0.06) 55%, transparent 75%);
-    pointer-events: none;
-    z-index: 0;
-    transform: translate(15%, -50%);
-  }
-  
-  /* 5. Pink - Bottom Left (Form) */
-  .glow-pink-bottom {
-    position: relative;
-    overflow: hidden;
-  }
-  .glow-pink-bottom::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: min(700px, 80vw);
-    height: min(500px, 80vh);
-    background: radial-gradient(ellipse, rgba(251, 207, 232, 0.65) 0%, rgba(251, 207, 232, 0.3) 35%, rgba(251, 207, 232, 0.1) 55%, transparent 75%);
-    pointer-events: none;
-    z-index: 0;
-    transform: translate(-15%, -50%);
-  }
-  
   /* Gradient Text Animated */
   .text-gradient {
-    background: linear-gradient(135deg, #6D5EF6 0%, #10B981 50%, #8B7EFF 100%);
+    background: linear-gradient(135deg, #494CA0 0%, #00D97A 50%, #494CA0 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -301,30 +208,30 @@
   /* Glow Effects */
   .glow-primary {
     box-shadow: 
-      0 0 20px rgba(109, 94, 246, 0.25),
-      0 0 40px rgba(109, 94, 246, 0.15);
+      0 0 20px rgba(73, 76, 160, 0.25),
+      0 0 40px rgba(73, 76, 160, 0.15);
     transition: all 0.3s ease;
   }
   
   .glow-primary:hover {
     box-shadow: 
-      0 0 30px rgba(109, 94, 246, 0.4),
-      0 0 60px rgba(109, 94, 246, 0.25),
-      0 0 80px rgba(109, 94, 246, 0.15);
+      0 0 30px rgba(73, 76, 160, 0.4),
+      0 0 60px rgba(73, 76, 160, 0.25),
+      0 0 80px rgba(73, 76, 160, 0.15);
     transform: translateY(-2px) scale(1.02);
   }
   
   .glow-primary-soft {
     box-shadow: 
-      0 4px 20px rgba(109, 94, 246, 0.2),
-      0 8px 40px rgba(109, 94, 246, 0.1);
+      0 4px 20px rgba(73, 76, 160, 0.2),
+      0 8px 40px rgba(73, 76, 160, 0.1);
   }
   
   .text-glow-green {
     text-shadow: 
-      0 0 10px rgba(16, 185, 129, 0.6),
-      0 0 20px rgba(16, 185, 129, 0.4),
-      0 0 30px rgba(16, 185, 129, 0.2);
+      0 0 10px rgba(0, 217, 122, 0.6),
+      0 0 20px rgba(0, 217, 122, 0.4),
+      0 0 30px rgba(0, 217, 122, 0.2);
   }
   
   /* Shimmer Effect */
@@ -357,14 +264,14 @@
   /* Gradient Shadows */
   .shadow-gradient-purple {
     box-shadow: 
-      0 10px 40px -10px rgba(109, 94, 246, 0.25),
-      0 20px 60px -20px rgba(109, 94, 246, 0.15);
+      0 10px 40px -10px rgba(73, 76, 160, 0.25),
+      0 20px 60px -20px rgba(73, 76, 160, 0.15);
   }
   
   .shadow-gradient-green {
     box-shadow: 
-      0 10px 40px -10px rgba(16, 185, 129, 0.25),
-      0 20px 60px -20px rgba(16, 185, 129, 0.15);
+      0 10px 40px -10px rgba(0, 217, 122, 0.25),
+      0 20px 60px -20px rgba(0, 217, 122, 0.15);
   }
   
   .shadow-gradient-pink {
@@ -443,8 +350,8 @@
   /* Shadow Glow Effects */
   .shadow-glow-purple {
     box-shadow: 
-      0 10px 40px -10px rgba(109, 94, 246, 0.4),
-      0 0 0 1px rgba(109, 94, 246, 0.1);
+      0 10px 40px -10px rgba(73, 76, 160, 0.4),
+      0 0 0 1px rgba(73, 76, 160, 0.1);
   }
 
   .shadow-glow-pink {
@@ -514,12 +421,12 @@ html {
 
 /* Selection Color */
 ::selection {
-  background-color: rgba(109, 94, 246, 0.3);
+  background-color: rgba(73, 76, 160, 0.3);
   color: #1a202c;
 }
 
 /* Focus Visible for Accessibility */
 :focus-visible {
-  outline: 2px solid #6D5EF6;
+  outline: 2px solid #494CA0;
   outline-offset: 2px;
 }

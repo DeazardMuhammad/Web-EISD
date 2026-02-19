@@ -40,7 +40,7 @@ export default function Gallery() {
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-32 pb-12 px-4 relative glow-blue-top-right overflow-hidden">
+      <section className="pt-32 pb-12 px-4 relative">
         <div className="max-w-6xl mx-auto relative z-10 text-center">
           <FadeIn direction="up" delay={0.2}>
             <motion.div
@@ -87,7 +87,7 @@ export default function Gallery() {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-12 px-4 relative glow-blue-left overflow-hidden">
+      <section className="py-12 px-4 relative">
         <div className="max-w-6xl mx-auto relative z-10">
           <motion.div layout className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <AnimatePresence mode="popLayout">

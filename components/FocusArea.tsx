@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import SectionHeading from './SectionHeading'
-import WaveShape from './WaveShape'
 import { useState, useCallback } from 'react'
 
 export default function FocusArea() {
@@ -26,7 +25,7 @@ export default function FocusArea() {
     },
     {
       id: 3,
-      title: 'AI / IoT',
+      title: 'Intelligence System',
       description: 'Exploring AI, machine learning, and Internet of Things for smart solutions.',
       icon: '🤖',
     },
@@ -189,8 +188,8 @@ export default function FocusArea() {
           <motion.div
             className="absolute inset-1 rounded-full border-2 border-transparent"
             style={{
-              borderTopColor: 'rgba(109, 94, 246, 0.4)',
-              borderRightColor: 'rgba(16, 185, 129, 0.4)',
+              borderTopColor: 'rgba(73, 76, 160, 0.4)',
+              borderRightColor: 'rgba(0, 217, 122, 0.4)',
             }}
             animate={{ rotate: 360 }}
             transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
@@ -242,8 +241,7 @@ export default function FocusArea() {
   }
 
   return (
-    <section className="py-16 px-4 relative glow-blue-left overflow-hidden">
-      <WaveShape position="bottom" color="rgba(109, 94, 246, 0.03)" />
+    <section className="py-16 px-4 relative">
       <div className="max-w-7xl mx-auto relative z-10">
         <SectionHeading 
           eyebrow="Explore"

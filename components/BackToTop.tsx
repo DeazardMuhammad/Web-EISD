@@ -46,7 +46,7 @@ export default function BackToTop() {
           cx="20"
           cy="20"
           r="18"
-          stroke="rgba(109, 94, 246, 0.1)"
+          stroke="rgba(73, 76, 160, 0.1)"
           strokeWidth="2"
           fill="none"
         />
